@@ -1,0 +1,10 @@
+#include<iostream>
+using namespace std;
+int main(){
+  int M;
+  int Result=0;
+  cin>>M;
+  Result= 48-M;
+  cout<<Result;
+}
+
