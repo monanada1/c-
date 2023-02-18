@@ -1,0 +1,10 @@
+#include<iostream>
+using namespace std;
+int main(){
+  int N,W;
+  int result =0;
+  cin>>N>>W;
+  result=N/W;
+  cout<<"The number of bricks = "<<result;
+}
+
