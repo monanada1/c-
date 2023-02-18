@@ -1,0 +1,10 @@
+#include<iostream>
+using namespace std;
+int main(){
+ int N,A,B;
+  int Totalballs=0;
+  cin>>N>>A>>B;
+  Totalballs=N+B-A;
+  cout<<"The total of balls after A removed = "<<Totalballs;
+}
+
