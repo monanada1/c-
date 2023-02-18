@@ -1,0 +1,9 @@
+#include<iostream>
+using namespace std;
+int main(){
+ int X,Y;
+  int Totalfare=0;
+  cin>>X>>Y;
+  Totalfare=X+(Y/2);
+  cout<<"The total fare afteer using the ticket = "<<Totalfare;
+}
