@@ -1,0 +1,55 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+struct Car {
+	string brand;
+	int model;
+	int yearOfmodel;
+};
+int main()
+{
+	const int numOfcars = 5;
+	Car Cars[numOfcars];
+	int index;
+	cout << "Enter the information of the cars" << endl;
+	for (int index = 0; index < numOfcars; index++) {
+		cout << "The brand of the car number " << (index + 1) << ": ";
+		cin >> Cars[index].brand;
+		cout << endl;
+	}
+	for (int index = 0; index < numOfcars; index++) {
+		cout << "The model of the car number " << (index + 1) << ": ";
+		cin >> Cars[index].model;
+		cout << endl;
+	}
+	for (int index = 0; index < numOfcars; index++) {
+		cout << "The year of car's model:  " << (index + 1) << ": ";
+		cin >> Cars[index].yearOfmodel;
+		cout << endl;
+	}
+	if ((Cars[0].yearOfmodel > Cars[1].yearOfmodel) && (Cars[0].yearOfmodel > Cars[2].yearOfmodel) && (Cars[0].yearOfmodel > Cars[3].yearOfmodel) && (Cars[0].yearOfmodel > Cars[4].yearOfmodel)) {
+		cout << "The brand of the car: " << Cars[0].brand << endl;
+		cout << "The model of the car: " << Cars[0].model << endl;
+		cout << "The year of the car's model: " << Cars[0].yearOfmodel << endl;
+	}
+	else if ((Cars[1].yearOfmodel > Cars[0].yearOfmodel) && (Cars[1].yearOfmodel > Cars[2].yearOfmodel) && (Cars[1].yearOfmodel > Cars[3].yearOfmodel) && (Cars[1].yearOfmodel > Cars[4].yearOfmodel)) {
+		cout << "The brand of the car: " << Cars[1].brand << endl;
+		cout << "The model of the car: " << Cars[1].model << endl;
+		cout << "The year of the car's model: " << Cars[1].yearOfmodel << endl;
+	}
+	else if ((Cars[2].yearOfmodel > Cars[1].yearOfmodel) && (Cars[2].yearOfmodel > Cars[0].yearOfmodel) && (Cars[2].yearOfmodel > Cars[3].yearOfmodel) && Cars[2].yearOfmodel > (Cars[4].yearOfmodel)) {
+		cout << "The brand of the car: " << Cars[2].brand << endl;
+		cout << "The model of the car: " << Cars[2].model << endl;
+		cout << "The year of the car's model: " << Cars[2].yearOfmodel << endl;
+	}
+	else if ((Cars[3].yearOfmodel > Cars[1].yearOfmodel) && (Cars[3].yearOfmodel > Cars[2].yearOfmodel) && (Cars[3].yearOfmodel > Cars[0].yearOfmodel) && (Cars[3].yearOfmodel > Cars[4].yearOfmodel)) {
+		cout << "The brand of the car: " << Cars[3].brand << endl;
+		cout << "The model of the car: " << Cars[3].model << endl;
+		cout << "The year of the car's model: " << Cars[3].yearOfmodel << endl;
+	}
+	else if ((Cars[4].yearOfmodel > Cars[1].yearOfmodel) && (Cars[4].yearOfmodel > Cars[2].yearOfmodel) && (Cars[4].yearOfmodel > Cars[3].yearOfmodel) && (Cars[4].yearOfmodel > Cars[0].yearOfmodel)) {
+		cout << "The brand of the car: " << Cars[4].brand << endl;
+		cout << "The model of the car: " << Cars[4].model << endl;
+		cout << "The year of the car's model: " << Cars[4].yearOfmodel << endl;
+	}
+}
